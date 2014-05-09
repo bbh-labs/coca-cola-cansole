@@ -372,8 +372,8 @@ a {
  *********/
 
 #steps {
-   max-width: 100%;
    overflow: auto;
+   margin: 0 auto;
 }
 
 .step {
@@ -921,7 +921,7 @@ a {
     }
 
     #step-wrapper {
-        max-width: 384px;
+        max-width: 160px;
         min-height: 100%;
         height: auto;
         margin: 0 auto;
