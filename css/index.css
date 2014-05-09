@@ -1,0 +1,1016 @@
+/***********
+ * General *
+ ***********/
+@font-face {
+	font-family: 'Cabin';
+	src: url('../fonts/Cabin-Regular.otf');
+}
+
+@font-face {
+	font-family: 'pixelmix';
+	src: url('../fonts/pixelmix.ttf');
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/*****************
+ * Type Settings *
+ *****************/
+h1, h2, h3, h4, h5, h6, p, li {
+	font-family: 'Cabin', 'Helvetica', sans-serif;
+    color: #222;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+.container {
+    width: 100%;
+    height: 620px;
+}
+
+.content {
+    position: relative; 
+    max-width: 960px;
+    height: 620px;
+    margin: 0 auto;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.responsive {
+    position: fixed;
+}
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+.no-pointer-events {
+    pointer-events: none;
+}
+
+.text-wrapper {
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    left: 1%;
+    padding: 32px;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.table-cell {
+    display: table-cell;
+}
+
+.vertical-align-middle {
+    vertical-align: middle;
+}
+
+.vertical-align-bottom {
+    vertical-align: bottom;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.default-bg {
+    background: #f3f3f3;
+}
+
+.no-bg {
+    background: rgba(0, 0, 0, 0);
+}
+
+.hidden {
+    display: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.transparent {
+    opacity: 0
+}
+
+.box-shadow {
+    box-shadow: 0 0 8px;
+}
+
+.layer1 {
+    z-index: 1;
+}
+
+.layer2 {
+    z-index: 2;
+}
+
+.layer3 {
+    z-index: 3;
+}
+
+.layer4 {
+    z-index: 4;
+}
+
+.layer5 {
+    z-index: 5;
+}
+
+.layer6 {
+    z-index: 6;
+}
+
+.layer7 {
+    z-index: 7;
+}
+
+.layer8 {
+    z-index: 8;
+}
+
+.layer9 {
+    z-index: 9;
+}
+
+/******************
+* Loading Screen *
+******************/
+#loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #e62625;
+}
+
+#loading-can {
+    width: 173px;
+    height: 173px;
+    background: url('../images/loading_can.png');
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+#loading-can-switch {
+    display: block;
+    margin: 0 auto;
+}
+
+#progress {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#progress > p {
+    color: #f3f3f3;
+}
+
+/**************
+ * Navigation *
+ **************/
+#main-header {
+    position: fixed;
+    width: 100%;
+    height: 32px;
+    padding: 16px 0;
+    background: rgba(0, 0, 0, 0);
+}
+
+#main-nav {
+    height: 32px;
+}
+
+#main-nav ul {
+    float: right;
+    margin: 0 16px;
+}
+
+#main-nav ul li {
+    float: left;
+    margin: 0 0 0 40px;
+}
+
+#main-nav ul li a {
+    color: #ffffff;
+}
+
+#main-nav ul li a:hover {
+    color: #e61e2a;
+}
+
+#logo {
+    position: absolute;
+    margin: 0 16px;
+    opacity: 1;
+}
+
+#logo_dark {
+    position: absolute;
+    margin: 0 16px;
+    opacity: 0;
+}
+
+#side-nav {
+    position: fixed;
+    top: 50%;
+    right: 16px;
+    margin: -96px 0 0 0;
+}
+
+#side-nav li {
+    margin: 16px 0;
+}
+
+#side-nav a:hover p {
+    color: #e61e2a;
+}
+
+#side-nav img {
+    float: right;
+}
+
+#side-nav p {
+    display: inline-block;
+    margin: 8px;
+    opacity: 0;
+    -moz-transition: opacity 0.2s;
+    -webkit-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+
+#side-nav a:hover p {
+    opacity: 1;
+}
+
+/**************
+ * Animations *
+ **************/
+#animation-a {
+    max-width: 100%;
+    height: 505px;
+    margin: 0 auto;
+}
+
+#animation-a > img {
+    position: absolute;
+    max-width: 960px;
+    max-height: 505px;
+    margin: 0 auto;
+}
+
+#can-shadow-b,
+#can-shadow-c,
+#can-shadow-d,
+#can-shadow-e {
+    opacity: 0;
+}
+
+/*********
+ * Home *
+ *********/
+#home {
+    width: 100%;
+    color: #f3f3f3;
+}
+
+.home-bg {
+    background: url('../images/bg_home.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#home-text-a, #home-text-b, #home-text-c {
+   color: #f3f3f3;
+}
+
+#home-text-b {
+    font-weight: bold;
+    margin: 8px;
+}
+
+#home-text-c {
+    display: inline-block;
+    background: #222222;
+    padding: 8px;
+    margin: 16px;
+}
+
+#home-can {
+    position: absolute;
+    max-width: 90%;
+    min-height: 50%;
+    top: 20%;
+    right: 10%;
+}
+
+#home .text-wrapper {
+    max-width: 600px;
+}
+
+#home a {
+    color: #f3f3f3;
+}
+
+#home-text-c:hover {
+    background: #f3f3f3;
+    color: #222;
+}
+
+/*********
+ * Steps *
+ *********/
+
+#steps {
+   max-width: 100%;
+   overflow: auto;
+}
+
+.step {
+   float: left;
+   max-width: 160px;
+   margin: 0 16px;
+}
+
+.step img {
+   float: left;
+   max-width: 160px;
+}
+
+.step p {
+   display: inline-block;
+   max-width: 160px;
+   line-height: 1.25em;
+}
+
+/*********
+ * About *
+ *********/
+
+#about-can {
+    position: absolute;
+    max-width: 90%;
+    max-height: 50%;
+    top: 33%;
+    right: 10%;
+}
+
+#about .text-wrapper {
+    max-width: 400px;
+    left: 1%;
+}
+
+#about-text-a {
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+#about-text-b {
+    line-height: 1.5em;
+    font-size: 14px;
+    text-align: left;
+}
+
+/**********
+ * Photos *
+ **********/
+
+#photos {
+   background: url('../images/bg_photos.jpg') no-repeat;
+   background-size: cover;
+}
+
+#photos-2 {
+   position: absolute;
+   background: url('../images/bg_photos_2.jpg') no-repeat;
+   background-size: cover;
+}
+
+#photos-text-wrapper {
+   text-align: center;
+}
+
+#photos-text {
+   display: inline-block;
+   color: #f3f3f3;
+   margin: 32px;
+   line-height: 1.5em;
+   max-width: 720px;
+}
+ 
+/*********
+ * Product *
+ *********/
+
+#product-can {
+    position: absolute;
+    max-width: 90%;
+    top: 33%;
+    right: 0%;
+}
+
+#product .text-wrapper {
+    max-width: 480px;
+    top: 15%;
+}
+
+.product-label {
+    position: absolute;
+    width: 960px;
+    height: 0px;
+    background-size: cover;
+}
+
+#teensy {
+    background: url('../images/product_teensy.png');
+}
+
+#bluetooth {
+    background: url('../images/product_bluetooth.png');
+}
+
+#sdcard {
+    background: url('../images/product_sdcard.png') no-repeat;
+    background-position: 0 -505px;
+    y: 505px;
+}
+
+#battery {
+    background: url('../images/product_battery.png') no-repeat;
+    background-position: 0 -505px;
+    y: 505px;
+}
+
+#charger {
+    background: url('../images/product_charger.png') no-repeat;
+    background-position: 0 -505px;
+    y: 505px;
+}
+
+#product-text-a {
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+#product-text-b {
+    line-height: 1.5em;
+    font-size: 14px;
+    text-align: left;
+}
+
+#product-text-c {
+    line-height: 1.5em;
+    font-size: 14px;
+    text-align: left;
+}
+
+#icon-watch, #icon-download {
+   float: left;
+   margin: 0 16px 0 0;
+}
+
+/************
+ * Sketches *
+ ************/
+#sketches {
+    width: 100%;
+    height: 620px;
+    background: url('../images/bg_sketches.jpg');
+}
+
+#sketches img {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    width: 33.33%;
+    height: 100%;
+    font-size: 0;
+}
+
+/*********
+ * App *
+ *********/
+ 
+#app-bg {
+    background: url('../images/bg_app.jpg');
+    background-size: cover;
+    background-position: center bottom;
+}
+
+#app-can {
+    position: absolute;
+    max-width: 90%;
+    top: 33%;
+    right: 10%;
+}
+
+#app .text-wrapper {
+    max-width: 400px;
+    left: 1%;
+}
+
+#app-text-a {
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+#app-text-b {
+    line-height: 1.5em;
+    font-size: 14px;
+    text-align: left;
+}
+
+/**********
+ * Coming *
+ **********/
+
+#coming {
+   background: url('../images/bg_coming.jpg') no-repeat;
+   background-size: cover;
+}
+
+#coming-2 {
+   position: absolute;
+   background: url('../images/bg_coming_2.jpg') no-repeat;
+   background-size: cover;
+}
+
+#coming .text-wrapper {
+   text-align: center;
+}
+
+#coming-can {
+    position: absolute;
+    bottom: 0%;
+}
+
+#animation-b img {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+}
+
+#coming-text-wrapper {
+    position: absolute;
+    top: 20%;
+    left: 1%;
+}
+
+#coming-text-a, #coming-text-b {
+   color: #222;
+}
+ 
+/**********
+ * Market *
+ **********/
+
+#market {
+   background: #f3f3f3;
+}
+
+#market-can {
+    position: absolute;
+    max-width: 90%;
+    max-height: 50%;
+    top: 10%;
+    left: 10%;
+}
+
+#screens {
+    position: absolute;
+    max-width: 100%;
+    height: 505px;
+    margin: 0 auto;
+    display: none;
+}
+
+#screens > div {
+    position: absolute;
+    width: 300px;
+    height: 170px;
+    top: 116px;
+    left: 242px;
+}
+
+#screen-1 {
+    background: url('../images/market_1.jpg') no-repeat;
+    background-size: cover;
+}
+
+#screen-2 {
+    background: url('../images/market_2.jpg') no-repeat;
+    background-position: -300px 0px;
+    background-size: cover;
+}
+
+#screen-3 {
+    background: url('../images/market_3.jpg') no-repeat;
+    background-position: -300px 0px;
+    background-size: cover;
+}
+
+#screen-4 {
+    background: url('../images/market_4.jpg') no-repeat;
+    background-position: -300px 0px;
+    background-size: cover;
+}
+
+#screen-menu {
+    position: static;
+    float: right;
+    max-width: 30%;
+    margin: 64px 32px;
+    opacity: 0;
+}
+
+#screen-menu > div > p {
+    -moz-transition: color 0.2s;
+    -webkit-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.screen-label {
+    position: relative;
+    max-width: 100%;
+    margin: 16px 0;
+}
+
+.screen-icon {
+    display: inline-block;
+    float: left;
+    margin: 8px;
+}
+
+.screen-title {
+    display: inline-block;
+    margin-top: 16px;
+    font-weight: bold;
+}
+
+.screen-description {
+    display: inline-block;
+    clear: both;
+    color: #555;
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 1.25em;
+}
+
+#screen-menu > div:hover > p {
+    color: #e61e2a;
+}
+
+/**********
+ * Footer *
+ **********/
+#footer {
+    width: 100%;
+    height: 310px;
+}
+
+#footer > div {
+    max-width: 960px;
+    padding: 16px auto;
+}
+
+#footer p {
+    color: #f3f3f3;
+}
+
+/*****************
+ * Media Queries *
+ *****************/
+
+@media only screen and (min-width: 480px) and (max-width: 760px) {
+    html, body {
+        background: #f3f3f3;
+    }
+    
+    h1 {
+       font-size: 28px
+    }
+    
+    .container, .content {
+        height: 100%;
+    }
+
+    .responsive {
+        position: relative;
+    }
+
+    .desktop {
+        display: none;
+    }
+    
+    .mobile {
+        display: block;
+    }
+
+    .text-wrapper {
+        position: static;
+        max-width: 100%;
+    }
+
+    #home-can {
+        position: static;
+        max-width: 100%;
+        max-height: 50%;
+        margin: 0 auto;
+    }
+    
+    #steps {
+        background: #f3f3f3;
+        min-height: 100%;
+        height: auto;
+        overflow: auto;
+    }
+
+    #step-wrapper {
+        max-width: 384px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #about-can {
+        position: static;
+        max-width: 100%;
+        margin: 16px auto;
+    }
+    
+    #about .text-wrapper {
+        position: static;
+        max-width: 100%;
+    }
+    
+    #about-text-a, #about-text-b {
+        text-align: center;
+    }
+
+    #product-can {
+        position: static;
+        max-width: 100%;
+    }
+    
+    #coming-can {
+        width: 100%;
+    }
+
+    #product .text-wrapper {
+        position: static;
+        text-align: center;
+        top: 0%;
+    }
+    
+    #app .text-wrapper {
+        position: static;
+        max-width: 100%;
+    }
+    
+    #sketches {
+        min-height: auto;
+        height: auto;
+        overflow: auto;
+    }
+    
+    #app-text-a, #app-text-b {
+        text-align: center;
+    }
+
+    #coming-text-wrapper {
+        position: static;
+        text-align: center;
+        padding-top: 25%;
+    }
+    
+    #coming-text-a {
+        color: #f3f3f3;
+        font-size: 24px;
+    }
+    
+    #coming-text-b {
+        color: #f3f3f3;
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 5%;
+    }
+
+    #market-can {
+        position: static;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    #screen-menu {
+        float: none;
+        position: static;
+        margin: 8px auto;
+        max-width: 200px;
+        opacity: 1;
+    }
+
+    .screen-label {
+        position: static;
+        max-width: 200px;
+        margin: 16px auto;
+    }
+    
+    #footer {
+        background: #222;
+    }
+    
+    #footer .content {
+        padding: 16px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    html, body {
+        background: #f3f3f3;
+    }
+    
+    h1 {
+       font-size: 24px
+    }
+    
+    .container, .content {
+        height: 100%;
+    }
+
+    .responsive {
+        position: relative;
+    }
+
+    .desktop {
+        display: none;
+    }
+    
+    .mobile {
+        display: block;
+    }
+
+    .text-wrapper {
+        position: static;
+        max-width: 100%;
+    }
+
+    #home-can {
+        position: static;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    #steps {
+        background: #f3f3f3;
+        min-height: 100%;
+        height: auto;
+        overflow: auto;
+    }
+
+    #step-wrapper {
+        max-width: 384px;
+        min-height: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #about-can {
+        position: static;
+        max-width: 100%;
+        margin: 16px auto;
+    }
+    
+    #about .text-wrapper {
+        position: static;
+        max-width: 100%;
+    }
+    
+    #about-text-a, #about-text-b {
+        text-align: center;
+    }
+
+    #product-can {
+        position: static;
+        max-width: 100%;
+        top: 0%;
+    }
+    
+    #coming-can {
+        width: 100%;
+    }
+
+    #product .text-wrapper {
+        position: static;
+        text-align: center;
+    }
+    
+    #app .text-wrapper {
+        position: static;
+        max-width: 100%;
+    }
+    
+    #sketches {
+        min-height: auto;
+        height: auto;
+        overflow: auto;
+    }
+    
+    #app-text-a, #app-text-b {
+        text-align: center;
+    }
+
+    #coming-text-wrapper {
+        position: static;
+        text-align: center;
+        padding-top: 33%;
+    }
+    
+    #coming-text-a {
+        color: #f3f3f3;
+        font-size: 24px;
+    }
+
+    #coming-text-b {
+        color: #f3f3f3;
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 5%;
+    }
+    
+    #market-can {
+        position: static;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    #screen-menu {
+        float: none;
+        position: static;
+        margin: 8px auto;
+        max-width: 200px;
+        opacity: 1;
+    }
+      
+    .screen-label {
+        position: static;
+        max-width: 200px;
+        margin: 16px auto;
+    }
+    
+    #footer {
+        background: #222;
+    }
+}
