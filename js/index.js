@@ -47,7 +47,7 @@ function Animation(container, path, type, count, onLoad) {
 
     this.gotoFrame = function(i) {
         this.previousIndex = this.index;
-        this.index = Math.floor(i);
+        this.index = Math.round(i);
         if (this.index != this.previousIndex) {
             $(container + ' img:nth-child(' + (this.previousIndex + 1) + ')').toggleClass('transparent');
             $(container + ' img:nth-child(' + (this.index + 1) + ')').toggleClass('transparent');
@@ -113,7 +113,7 @@ function initSkrollrStuff() {
                 if (pos < 1240) {
                     animationA.gotoFrame(map(pos, 0, 620, 0, 15));
                 } else if (pos < 2480) {
-                    animationA.gotoFrame(map(pos, 1240, 1860, 15, 40));
+                    animationA.gotoFrame(map(pos, 1560, 1860, 15, 40));
                 } else if (pos < 3620) {
                     animationA.gotoFrame(map(pos, 2480, 3000, 40, 102));
                 } else if (pos < 4860) {
