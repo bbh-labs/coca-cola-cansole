@@ -740,7 +740,7 @@ a {
 
 @media only screen and (min-width: 480px) and (max-width: 760px) {
     html, body {
-        background: #222;
+        background: #f3f3f3;
     }
     
     h1 {
@@ -891,14 +891,17 @@ a {
     }
     
     #footer .content {
-        padding: 16px;
         max-height: 310px;
+    }
+
+    #footer .table {
+        height: auto;
     }
 }
 
 @media only screen and (max-width: 480px) {
     html, body {
-        background: #222;
+        background: #f3f3f3;
     }
     
     h1 {
@@ -1051,7 +1054,10 @@ a {
     }
 
     #footer .content {
-        padding: 16px;
         max-height: 310px;
+    }
+
+    #footer .table {
+        height: auto;
     }
 }
