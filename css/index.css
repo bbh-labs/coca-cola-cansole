@@ -405,8 +405,9 @@ a {
     right: 10%;
 }
 
-#about .text-wrapper {
+#about-text-wrapper {
     max-width: 400px;
+    top: 30%;
     left: 1%;
 }
 
@@ -460,7 +461,7 @@ a {
     right: 0%;
 }
 
-#product .text-wrapper {
+#product-text-wrapper {
     max-width: 480px;
     top: 15%;
 }
@@ -556,8 +557,9 @@ a {
     right: 10%;
 }
 
-#app .text-wrapper {
+#app-text-wrapper {
     max-width: 400px;
+    top: 25%;
     left: 1%;
 }
 
