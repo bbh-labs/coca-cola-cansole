@@ -746,8 +746,13 @@ a {
     h1 {
        font-size: 28px
     }
+
+    .container {
+        height: 100%;
+        min-height: 720px;
+    }
     
-    .container, .content {
+    .content {
         height: 100%;
     }
 
@@ -897,6 +902,7 @@ a {
     
     .container, .content {
         height: 100%;
+        min-height: 480px;
     }
 
     .responsive {
